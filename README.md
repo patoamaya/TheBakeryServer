@@ -1,0 +1,2 @@
+<!-- credenciales ocultas por seguridad, usar las que necesite cada uno directamente con el nombre de la configuracion de mongo y de cloudinary -->
+<!-- cd ServerSide - npm run dev para inicializar el servidor provisto por express -->
