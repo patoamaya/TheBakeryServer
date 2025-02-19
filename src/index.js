@@ -6,7 +6,8 @@ const bodyParser = require('body-parser');
 const mongoose =  require('mongoose');
 const IndexRouter = require('./routes/IndexRouter');
 const OwnerRouter = require('./routes/OwnerRouter');
-const {url} = require('./credentials/MongoDb')
+
+const url = process.env.url
 
 const app = express()
 mongoose.connect(url)
