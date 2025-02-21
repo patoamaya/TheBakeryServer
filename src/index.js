@@ -21,7 +21,10 @@ mongoose.connect(url)
 app.use(express.static(path.join(__dirname, "public")))
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+    methods:['GET', 'PATCH', 'PUT', 'DELETE'],
+    allowedHeaders:['Content-Type', 'Authorization']
+}))
 app.use(helmet())
 
 const PORT = process.env.PORT || 1000;
